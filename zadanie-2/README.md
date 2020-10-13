@@ -260,11 +260,17 @@ przebiegnie bez błędów:
 
 W pliku `odpowiedz.py`:
 
-1. Dopisać synonimy do słownika `SYNONIMY`.
+1. Jeśli pracujemy pod Windows, zainstalować pakiet `pyreadline`:
 
-2. Dopisać synonimy do słownika `KOLUMNY`.
+    ```
+    pip install pyreadline
+    ```
 
-3. Uzupełnić funkcję `odpowiedz()`.
+2. Dopisać synonimy do słownika `SYNONIMY`.
+
+3. Dopisać synonimy do słownika `KOLUMNY`.
+
+4. Uzupełnić funkcję `odpowiedz()`.
 Pod żadnym pozorem nie należy wstawiać tekstu
 warunku do zapytania SQL, bo ten paskudny zwyczaj
 otwiera drogę do ataków, znanych jako *SQL injection*
