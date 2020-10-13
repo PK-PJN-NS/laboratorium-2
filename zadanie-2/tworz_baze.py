@@ -36,7 +36,7 @@ def main():
         """
         CREATE VIRTUAL TABLE PracownicyFTS USING fts4(dane)
         """)
-    with open('pracownicy.csv', 'rt') as pracownicy:
+    with open('pracownicy.csv', 'rt', encoding='utf-8') as pracownicy:
         for jednostka, pracownik, email, telefon in csv.reader(pracownicy):
             jednostka = normalizacja.normalizuj_kody_jednostek(jednostka)
             telefon = normalizacja.normalizuj_numery_telefonów(telefon)
