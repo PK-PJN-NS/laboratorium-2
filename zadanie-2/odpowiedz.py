@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 
 import collections
-import readline
 import sqlite3
 
 import normalizacja
 import utils
+
+try:
+    import readline
+except ImportError:
+    from pyreadline import Readline as readline
 
 
 Zapytanie = collections.namedtuple('Zapytanie', 'kolumny tekst_warunku')
